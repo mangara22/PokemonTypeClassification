@@ -1,7 +1,7 @@
 # Pokemon Type Classification with Neural Networks
 2 implementations of **Convolutional Neural Networks** to classify a Pokémon's type as *Water*, *Fire*, or *Grass*. The dataset contained many different Pokémon at different angles and colors (shiny variants included), these color images are 128x128 and *data augmentation* was used to better training. The labels were *One-hot encoded*. Each network was trained using a 70-15-15 train-validation-test split.
 
-* Note: Each network was trained on Google Colab using [CUDA](https://docs.pytorch.org/docs/stable/cuda.html), then saved to a `.pt` file. These files were then loaded in to calculate metrics using [MPS (Metal Performance Shaders)](https://docs.pytorch.org/docs/stable/notes/mps.html) locally to avoid runtime timeouts on Colab, this difference in environment may affect results.
+* Note: Each network was trained on Google Colab using [CUDA](https://docs.pytorch.org/docs/stable/cuda.html), then saved to a `.pt` file. These files were then loaded in to calculate metrics using [MPS (Metal Performance Shaders)](https://docs.pytorch.org/docs/stable/notes/mps.html) locally to avoid runtime timeouts and excessive usage on Colab, this difference in environment may affect results.
 
 ## Dataset
 This dataset is from [Kaggle](https://www.kaggle.com/datasets/noodulz/pokemon-dataset-1000).
